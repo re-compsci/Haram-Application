@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="518.0" prefWidth="361.0" style="-fx-background-color: #BFCDCB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenetest.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="361.0" layoutX="8.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pics/mainPic.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_id" layoutX="64.0" layoutY="229.0" prefHeight="30.0" prefWidth="233.0" promptText="Enter Your ID.." style="-fx-background-color: #5A6E6F;" />
+      <PasswordField fx:id="txt_pass" layoutX="64.0" layoutY="290.0" prefHeight="30.0" prefWidth="233.0" promptText="Enter Your Password.." style="-fx-background-color: #5A6E6F;" />
+      <Label layoutX="80.0" layoutY="466.0" prefHeight="17.0" prefWidth="202.0" text="Don't have Account?" textFill="#688682">
+         <font>
+            <Font name="Serif Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt_sginin" layoutX="116.0" layoutY="359.0" mnemonicParsing="false" onAction="#Add_signin" prefHeight="31.0" prefWidth="130.0" style="-fx-background-color: #2C3842;" text="Sign In" textFill="#bfcdcb" />
+      <Text fill="#5a6e6f" layoutX="35.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please sign in to continue.">
+         <font>
+            <Font name="Serif Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#2c3842" layoutX="34.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In">
+         <font>
+            <Font name="Serif Regular" size="39.0" />
+         </font>
+      </Text>
+      <Label layoutX="205.0" layoutY="467.0" onMouseClicked="#MouseTo_SignUp" text="Sign up">
+         <font>
+            <Font name="Serif Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="a" layoutX="64.0" layoutY="259.0" prefHeight="17.0" prefWidth="233.0" />
+      <Label fx:id="a1" layoutX="64.0" layoutY="327.0" prefHeight="17.0" prefWidth="233.0" />
+   </children>
+</Pane>

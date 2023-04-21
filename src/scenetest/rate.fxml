@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="361.0" style="-fx-background-color: #BFCDCB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenetest.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="398.0" layoutX="6.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pics/mainPic.jpeg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="61.0" prefHeight="44.0" prefWidth="242.0" text="Rating" textAlignment="CENTER" textFill="#2c3842">
+         <font>
+            <Font name="Serif Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="51.0" layoutY="116.0" prefHeight="79.0" prefWidth="256.0" text="We are pleased to hear your opinion about servises." textAlignment="CENTER" textFill="#2c3842" wrapText="true">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelrate" alignment="TOP_CENTER" layoutX="34.0" layoutY="179.0" prefHeight="173.0" prefWidth="280.0" style="-fx-border-color: #5A6E6F; -fx-border-width: 3;" textAlignment="CENTER" textFill="#0d5737" wrapText="true">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button id="CreatBtn" layoutX="132.0" layoutY="425.0" mnemonicParsing="false" onAction="#ratesub"  prefHeight="27.0" prefWidth="84.0" style="-fx-background-color: #2c3842;" text="Submit" textAlignment="CENTER" textFill="#bfcdcb">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtrate" alignment="CENTER" layoutX="91.0" layoutY="373.0" onAction="#binding" opacity="0.92" prefHeight="36.0" prefWidth="177.0" promptText="Enter your openion please." style="-fx-background-color: #5A6E6F;" />
+      <Button id="CreatBtn" fx:id="CreatBtn" layoutX="132.0" layoutY="464.0" mnemonicParsing="false" onAction="#To_Menu" prefHeight="24.0" prefWidth="84.0" style="-fx-background-color: #2c3842;" text="exit" textAlignment="CENTER" textFill="#bfcdcb">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
